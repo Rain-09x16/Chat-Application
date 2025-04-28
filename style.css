@@ -1,0 +1,203 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #f3f8ff, #dbeafe); 
+}
+
+/* Ensure the body and html take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main application container */
+#app {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  background: linear-gradient(135deg, #f3f8ff, #a9c8ee); 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Headings styling */
+h2, h3 {
+  margin: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input fields styling */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); 
+  outline: none;
+}
+
+/* General button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #007bff; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Chat messages container */
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Individual message styling */
+#messages div {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #e9f5ff;
+  transition: background-color 0.3s ease;
+}
+
+#messages div:hover {
+  background-color: #d4ebff;
+}
+
+/* Highlight username in messages */
+#messages div strong {
+  color: #007bff; 
+}
+
+/* Room information section */
+#roomInfo {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Room name styling */
+#roomName {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* User list styling */
+#users {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Leave room button styling */
+#leaveBtn {
+  background-color: #dc3545; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#leaveBtn:hover {
+  background-color: #a71d2a; 
+  transform: translateY(-2px);
+}
+
+#leaveBtn:active {
+  transform: translateY(0); 
+}
+
+/* Message input field styling */
+#messageInput {
+  width: calc(100% - 80px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#messageInput:focus {
+  border-color: #28a745; 
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.3); 
+  outline: none;
+}
+
+/* Send button styling */
+#sendBtn {
+  width: 70px;
+  padding: 10px;
+  background-color: #28a745; 
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#sendBtn:hover {
+  background-color: #218838; 
+  transform: translateY(-2px);
+}
+
+#sendBtn:active {
+  transform: translateY(0);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  padding: 10px 0;
+  background-color: #f0f2f5;
+  width: 100%;
+  margin-top: auto;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
