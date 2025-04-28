@@ -24,7 +24,7 @@ A real-time chat application built with **HTML**, **CSS**, **JavaScript**, **Nod
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Rain-09x16/Chat-Application.git
 
 2. **Navigate to the project directory**:
    cd Chat-Application
